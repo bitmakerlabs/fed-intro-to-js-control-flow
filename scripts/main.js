@@ -27,18 +27,12 @@ $(document).ready(function(){
 
 
 
-
-  /* STEP 3
-    Complete this for loop. 
-    We want to iterate over each item in your tempList Array ...
-    The name of your iterator variable should be item
-  */
-  for(var item = 0;) {
+  for(var item = 0; item < tempList.length; item++) {
 
     var currentItem = $('<li><span>' + tempList[item] + '&deg;C</span></li>');
     currentItem.appendTo('#temp-list');
 
-    /* STEP 4
+    /* STEP 3
       IF/Else - Let's create some conditions!
 
       Create some if conditions:
@@ -57,7 +51,7 @@ $(document).ready(function(){
 
 
 
-    /* STEP 5
+    /* STEP 4
       Once your conditions have been created, copy the following code
       in their corresponding blocks
 
